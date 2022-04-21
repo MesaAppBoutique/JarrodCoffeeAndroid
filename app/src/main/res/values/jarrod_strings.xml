@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="store_information"><p tools:ignore="Typos">Tuesday\'s thru Thursday\'s \n9am to 5pm \n Friday\'s and Saturday\'s \n9am to 9pm \n Sunday\'s \n 10am to 3pm</p></string>
+    <string name="location_information">154 W. Main St. \n Mesa, AZ 85201 \n(Downtown Mesa)</string>
+    <string name="hours_header">Hours</string>
+    <string name="Location_header">Location</string>
+    <string name="follow_us">Follow us On:</string>
+    <string name="phone_number">480&#8211;822&#8211;7146</string>
+    <!--<p>Tuesday\'s thru Thursday\'s</p><p>9am to 5pm</p>-->
+</resources>
