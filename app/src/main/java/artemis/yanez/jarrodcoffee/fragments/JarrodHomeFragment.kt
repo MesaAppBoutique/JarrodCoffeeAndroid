@@ -25,5 +25,10 @@ class JarrodHomeFragment : Fragment() {
         return fragmentBinding.root
     }
 
+    //this is where the variables are bound to the xml layouts
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    }
+
 
 }

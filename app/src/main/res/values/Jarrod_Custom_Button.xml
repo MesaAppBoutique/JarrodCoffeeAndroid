@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Created this style because when using the theme and the button tag, I was unable to style the buttons with the red color.
+     Also changed the button to a textview instead. made it clickable and focusable.
+     -->
+    <style name="PrimaryColoredButton" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="colorButtonNormal">@color/jarrod_red</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:background">@drawable/jarrod_custom_btn</item>
+        <item name="android:textSize">18sp</item>
+        <item name="textFillColor">@color/white</item>
+    </style>
+</resources>

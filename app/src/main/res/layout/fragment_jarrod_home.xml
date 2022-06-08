@@ -12,7 +12,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/jarrod_bkg">
 
             <LinearLayout
                 android:id="@+id/jarrod_coffee_wrap"
@@ -20,7 +21,6 @@
                 android:layout_height="0dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:padding="10dp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline17"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
                 <ImageView
                     android:id="@+id/jarrod_coffee_images"
                     android:layout_width="124dp"
-                    android:layout_height="104dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:background="@drawable/jarrod_coffee_logo"
                     android:padding="10dp"
@@ -38,7 +38,7 @@
 
             <LinearLayout
                 android:id="@+id/jarrod_coffee_menu"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:gravity="center"
                 android:orientation="horizontal"
@@ -50,31 +50,41 @@
                 app:layout_constraintTop_toTopOf="@+id/guideline17"
                 app:layout_constraintVertical_bias="0.184">
 
-                <Button
-                    android:id="@+id/button12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <TextView
+                    android:id="@+id/home_btn"
+                    style="@style/PrimaryColoredButton"
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginEnd="15dp"
+                    android:background="@drawable/jarrod_custom_btn"
+                    android:gravity="center"
                     android:text="Home"
-                    tools:ignore="ButtonStyle,HardcodedText" />
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
-                <Button
-                    android:id="@+id/button13"
+                <TextView
+                    android:id="@+id/home_event_btn"
+                    style="@style/PrimaryColoredButton"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginEnd="15dp"
+                    android:background="@drawable/jarrod_custom_btn"
                     android:text="Menu"
-                    tools:ignore="ButtonStyle,HardcodedText" />
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
-                <Button
-                    android:id="@+id/button11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <TextView
+                    android:id="@+id/home_contact_us"
+                    style="@style/PrimaryColoredButton"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:text="Events"
-                    tools:ignore="ButtonStyle,HardcodedText" />
+                    android:background="@drawable/jarrod_custom_btn"
+                    android:text="Contact us"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -104,21 +114,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="124dp" />
+                app:layout_constraintGuide_begin="100dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="718dp" />
+                app:layout_constraintGuide_begin="681dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="201dp" />
+                app:layout_constraintGuide_begin="158dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline20"
@@ -132,7 +142,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="563dp" />
+                app:layout_constraintGuide_begin="625dp" />
 
             <LinearLayout
                 android:id="@+id/linearLayout6"
@@ -142,15 +152,17 @@
                 app:layout_constraintBottom_toTopOf="@+id/guideline24"
                 app:layout_constraintEnd_toStartOf="@+id/guideline26"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline20">
+                app:layout_constraintTop_toTopOf="@+id/guideline27">
 
                 <TextView
                     android:id="@+id/hours_header_TV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:gravity="center"
                     android:padding="5dp"
                     android:text="@string/hours_header"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -158,9 +170,12 @@
                     android:id="@+id/textView21"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="@string/store_information" />
+                    android:text="@string/store_information"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <androidx.constraintlayout.widget.Guideline
@@ -177,15 +192,17 @@
                 app:layout_constraintBottom_toTopOf="@+id/guideline24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/linearLayout6"
-                app:layout_constraintTop_toTopOf="@+id/guideline20">
+                app:layout_constraintTop_toTopOf="@+id/guideline27">
 
                 <TextView
                     android:id="@+id/textView22"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:gravity="center"
                     android:padding="5dp"
                     android:text="@string/Location_header"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -193,112 +210,81 @@
                     android:id="@+id/textView23"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:maxLines="3"
-                    android:text="@string/location_information" />
-
-                <Button
-                    android:id="@+id/map_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
-                    android:text="Map"
-                    tools:ignore="HardcodedText" />
-            </LinearLayout>
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:text="@string/location_information"
+                    android:textColor="@color/white" />
 
-            <LinearLayout
-                android:id="@+id/linearLayout7"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toTopOf="@+id/textView24"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline24">
-
-                <Button
-                    android:id="@+id/send_email_btn"
-                    android:layout_width="20dp"
+                <TextView
+                    android:id="@+id/map_btn"
+                    android:layout_width="140dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="0.7"
-                    android:drawableStart="@drawable/ic_email_two"
-                    android:text="Email"
-                    android:textAllCaps="false"
-                    android:textSize="19sp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/jarrod_custom_btn"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    android:text="Go to Map"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
                     android:textStyle="bold"
-                    tools:ignore="ButtonStyle,HardcodedText" />
-
-                <Button
-                    android:id="@+id/button23"
-                    android:layout_width="12dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_weight="0.7"
-                    android:drawableStart="@drawable/ic_phone_icon"
-                    android:text="@string/phone_number"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    tools:ignore="ButtonStyle" />
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView24"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:gravity="center_vertical"
+                android:id="@+id/home_phone_btn"
+                style="@style/PrimaryColoredButton"
+                android:layout_width="166dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
                 android:padding="5dp"
-                android:text="@string/follow_us"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/guideline28"
+                android:text="@string/phone_number"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:drawableStartCompat="@drawable/ic_phone_icon"
+                app:layout_constraintBottom_toTopOf="@+id/guideline18"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline27" />
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+                app:layout_constraintVertical_bias="0.636"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="614dp" />
+                app:layout_constraintGuide_begin="475dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="653dp" />
+                app:layout_constraintGuide_begin="714dp" />
 
-            <ImageButton
-                android:id="@+id/facebook_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_facebook_logo"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/guideline26"
-                app:layout_constraintHorizontal_bias="0.507"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline28"
-                tools:ignore="ContentDescription" />
-
-            <ImageButton
-                android:id="@+id/Instagram_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_instagram_logo"
-                app:layout_constraintBottom_toBottomOf="parent"
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="379dp"
+                android:layout_height="63dp"
+                android:background="@color/jarrod_red"
+                android:padding="5dp"
+                android:text="Your destination for Great Coffee, Tea and local events"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline27"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/guideline26"
-                app:layout_constraintTop_toTopOf="@+id/guideline28"
-                tools:ignore="ContentDescription" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jarrod_image_wrap"
+                tools:ignore="HardcodedText" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

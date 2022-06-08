@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="jarrod_red">#B90101</color>
+    <color name="jarrod_lighter_red">#FF0000</color>
+    <color name="jarrod_darker_red">#4E0101</color>
+    <color name="jarrod_bkg">#2C3245</color>
+    <color name="jarrod_lighter_bkg">#525E85</color>
+</resources>
