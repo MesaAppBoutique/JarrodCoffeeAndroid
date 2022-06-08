@@ -20,7 +20,6 @@
                 android:layout_height="0dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:padding="10dp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline17"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +28,7 @@
                 <ImageView
                     android:id="@+id/jarrod_coffee_images"
                     android:layout_width="124dp"
-                    android:layout_height="104dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:background="@drawable/jarrod_coffee_logo"
                     android:padding="10dp"
@@ -51,7 +50,7 @@
                 app:layout_constraintVertical_bias="0.184">
 
                 <Button
-                    android:id="@+id/button12"
+                    android:id="@+id/home_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -60,7 +59,7 @@
                     tools:ignore="ButtonStyle,HardcodedText" />
 
                 <Button
-                    android:id="@+id/button13"
+                    android:id="@+id/home_event_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -69,7 +68,7 @@
                     tools:ignore="ButtonStyle,HardcodedText" />
 
                 <Button
-                    android:id="@+id/button11"
+                    android:id="@+id/home_contact_us"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -104,21 +103,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="124dp" />
+                app:layout_constraintGuide_begin="100dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="718dp" />
+                app:layout_constraintGuide_begin="678dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="201dp" />
+                app:layout_constraintGuide_begin="155dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline20"
@@ -132,7 +131,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="563dp" />
+                app:layout_constraintGuide_begin="630dp" />
 
             <LinearLayout
                 android:id="@+id/linearLayout6"
@@ -142,7 +141,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/guideline24"
                 app:layout_constraintEnd_toStartOf="@+id/guideline26"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline20">
+                app:layout_constraintTop_toTopOf="@+id/guideline27">
 
                 <TextView
                     android:id="@+id/hours_header_TV"
@@ -177,7 +176,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/guideline24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/linearLayout6"
-                app:layout_constraintTop_toTopOf="@+id/guideline20">
+                app:layout_constraintTop_toTopOf="@+id/guideline27">
 
                 <TextView
                     android:id="@+id/textView22"
@@ -203,102 +202,51 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
-                    android:text="Map"
+                    android:text="Go to Map"
                     tools:ignore="HardcodedText" />
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/linearLayout7"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toTopOf="@+id/textView24"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline24">
-
-                <Button
-                    android:id="@+id/send_email_btn"
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="0.7"
-                    android:drawableStart="@drawable/ic_email_two"
-                    android:text="Email"
-                    android:textAllCaps="false"
-                    android:textSize="19sp"
-                    android:textStyle="bold"
-                    tools:ignore="ButtonStyle,HardcodedText" />
-
-                <Button
-                    android:id="@+id/button23"
-                    android:layout_width="12dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_weight="0.7"
-                    android:drawableStart="@drawable/ic_phone_icon"
-                    android:text="@string/phone_number"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    tools:ignore="ButtonStyle" />
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:gravity="center_vertical"
-                android:padding="5dp"
-                android:text="@string/follow_us"
-                android:textSize="18sp"
+            <Button
+                android:id="@+id/home_phone_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:drawableLeft="@drawable/ic_phone_icon"
+                android:text="@string/phone_number"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/guideline28"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline27" />
+                app:layout_constraintTop_toTopOf="@+id/guideline24"
+                tools:ignore="ButtonStyle" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="614dp" />
+                app:layout_constraintGuide_begin="475dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="653dp" />
+                app:layout_constraintGuide_begin="692dp" />
 
-            <ImageButton
-                android:id="@+id/facebook_btn"
+            <TextView
+                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_facebook_logo"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/guideline26"
-                app:layout_constraintHorizontal_bias="0.507"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline28"
-                tools:ignore="ContentDescription" />
-
-            <ImageButton
-                android:id="@+id/Instagram_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_instagram_logo"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="#CD2222"
+                android:text="Your destination for Great Coffee, Tea and local events"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline27"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/guideline26"
-                app:layout_constraintTop_toTopOf="@+id/guideline28"
-                tools:ignore="ContentDescription" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jarrod_image_wrap" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

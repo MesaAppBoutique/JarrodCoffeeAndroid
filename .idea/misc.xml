@@ -10,11 +10,18 @@
         <entry key="..\:/Users/janel/AndroidStudioProjects/jarrodCoffee/app/src/main/res/layout/fragment_jarrod_menu.xml" value="0.20555555555555555" />
         <entry key="..\:/Users/janel/AndroidStudioProjects/jarrodCoffee/app/src/main/res/layout/jarrod_menu_items.xml" value="0.187890625" />
         <entry key="..\:/Users/janel/AndroidStudioProjects/jarrodCoffee/app/src/main/res/layout/recycler_view_item.xml" value="0.187890625" />
+        <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/drawable/ic_email_icon.xml" value="0.2215" />
+        <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/drawable/ic_email_two.xml" value="0.2215" />
+        <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/drawable/ic_facebook_logo.xml" value="0.2215" />
+        <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/drawable/ic_instagram_logo.xml" value="0.2215" />
         <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/layout/activity_main.xml" value="0.278125" />
+        <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/layout/fragment_jarrod_contact.xml" value="0.228125" />
         <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/layout/fragment_jarrod_event.xml" value="0.278125" />
-        <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/layout/fragment_jarrod_home.xml" value="0.278125" />
+        <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/layout/fragment_jarrod_home.xml" value="0.23421052631578948" />
+        <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/layout/fragment_jarrod_inner_menu.xml" value="0.24791666666666667" />
         <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/layout/fragment_jarrod_menu.xml" value="0.278125" />
-        <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/layout/jarrod_menu_items.xml" value="0.278125" />
+        <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/layout/jarrod_inner_menu_items.xml" value="0.278125" />
+        <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/layout/jarrod_menu_items.xml" value="0.24791666666666667" />
         <entry key="..\:/blamo/Documents/JarrodCoffeeAndroid/app/src/main/res/layout/recycler_view_item.xml" value="0.278125" />
       </map>
     </option>

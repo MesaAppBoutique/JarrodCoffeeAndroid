@@ -6,28 +6,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import artemis.yanez.jarrodcoffee.R
-import artemis.yanez.jarrodcoffee.databinding.FragmentJarrodEventBinding
 
 
-class JarrodEventFragment : Fragment() {
-
-    //adding the variable for binding the layout
-    private var binding: FragmentJarrodEventBinding? = null
+class JarrodInnerMenuFragment : Fragment() {
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         // Inflate the layout for this fragment
-        val fragmentBinding = FragmentJarrodEventBinding.inflate(inflater, container, false)
-        binding = fragmentBinding
-        return fragmentBinding.root
+        return inflater.inflate(R.layout.fragment_jarrod_inner_menu, container, false)
     }
 
-    //this is where the variables are bound to the xml layouts
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }
 
+    
 }
