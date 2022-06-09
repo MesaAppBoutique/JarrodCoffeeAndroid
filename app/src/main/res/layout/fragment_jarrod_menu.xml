@@ -12,7 +12,9 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:background="@color/jarrod_bkg"
+            >
 
 
             <LinearLayout
@@ -31,7 +33,7 @@
                     android:layout_height="175dp"
                     android:layout_gravity="center"
                     android:background="@drawable/jarrod_coffee_logo"
-                    />
+                    tools:ignore="ContentDescription" />
             </LinearLayout>
 
             <LinearLayout
@@ -45,40 +47,52 @@
                 app:layout_constraintStart_toStartOf="@+id/guideline7"
                 app:layout_constraintTop_toTopOf="@+id/guideline6">
 
-                <Button
+                <TextView
                     android:id="@+id/menu_home_btn"
+                    style="@style/PrimaryColoredButton"
                     android:layout_width="181dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="34dp"
                     android:layout_gravity="center"
-                    android:text="Home" />
+                    android:layout_marginBottom="5dp"
+                    android:text="Home"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
-                <Button
+                <TextView
                     android:id="@+id/menu_events_btn"
+                    style="@style/PrimaryColoredButton"
                     android:layout_width="181dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="38dp"
                     android:layout_gravity="center"
-                    android:text="Events" />
+                    android:layout_marginBottom="5dp"
+                    android:text="Events"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
-                <Button
+                <TextView
                     android:id="@+id/menu_contact_us_btn"
+                    style="@style/PrimaryColoredButton"
                     android:layout_width="181dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     android:layout_gravity="center"
-                    android:text="Contact US" />
+                    android:text="Contact US"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/category_view"
                 android:layout_width="392dp"
                 android:layout_height="0dp"
+                android:background="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.157"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline9"
                 app:layout_constraintVertical_bias="0.0"
-                tools:itemCount="9"
-                tools:listitem="@layout/recycler_view_item" />
+                tools:itemCount="6"
+                tools:listitem="@layout/jarrod_menu_items" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline6"

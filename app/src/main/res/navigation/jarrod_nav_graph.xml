@@ -53,5 +53,21 @@
         android:id="@+id/jarrodInnerMenuFragment"
         android:name="artemis.yanez.jarrodcoffee.fragments.JarrodInnerMenuFragment"
         android:label="fragment_jarrod_inner_menu"
-        tools:layout="@layout/fragment_jarrod_inner_menu" />
+        tools:layout="@layout/fragment_jarrod_inner_menu" >
+        <action
+            android:id="@+id/action_jarrodInnerMenuFragment_to_jarrodMenuFragment"
+            app:destination="@id/jarrodMenuFragment" />
+        <action
+            android:id="@+id/action_jarrodInnerMenuFragment_to_jarrodDetailFragment"
+            app:destination="@id/jarrodDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jarrodDetailFragment"
+        android:name="artemis.yanez.jarrodcoffee.fragments.JarrodDetailFragment"
+        android:label="fragment_jarrod_detail"
+        tools:layout="@layout/fragment_jarrod_detail" >
+        <action
+            android:id="@+id/action_jarrodDetailFragment_to_jarrodInnerMenuFragment"
+            app:destination="@id/jarrodInnerMenuFragment" />
+    </fragment>
 </navigation>

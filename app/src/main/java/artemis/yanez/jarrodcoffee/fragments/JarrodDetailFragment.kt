@@ -6,22 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import artemis.yanez.jarrodcoffee.R
-import artemis.yanez.jarrodcoffee.databinding.FragmentJarrodContactBinding
 
 
-class JarrodContactFragment : Fragment() {
-
-    private var binding: FragmentJarrodContactBinding? = null
+class JarrodDetailFragment : Fragment() {
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         // Inflate the layout for this fragment
-        val fragmentBinding = FragmentJarrodContactBinding.inflate(inflater, container, false)
-        binding = fragmentBinding
-        return fragmentBinding.root
+        return inflater.inflate(R.layout.fragment_jarrod_detail, container, false)
     }
+
 
 }

@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import artemis.yanez.jarrodcoffee.R
 import artemis.yanez.jarrodcoffee.databinding.FragmentJarrodEventBinding
 
 
@@ -28,6 +27,11 @@ class JarrodEventFragment : Fragment() {
     //this is where the variables are bound to the xml layouts
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding = null
     }
 
 }

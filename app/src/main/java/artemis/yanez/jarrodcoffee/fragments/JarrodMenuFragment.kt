@@ -31,6 +31,9 @@ class JarrodMenuFragment : Fragment() {
 
     //worry about adding destroy in a little bit
 
-
+    override fun onDestroy() {
+        super.onDestroy()
+        binding = null
+    }
 
 }
