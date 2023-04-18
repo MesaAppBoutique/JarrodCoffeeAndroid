@@ -8,6 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none"
+        android:background="@color/jarrod_bkg"
         tools:ignore="SpeakableTextPresentCheck">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,9 +29,10 @@
 
                 <ImageView
                     android:id="@+id/jarrod_coffee_images"
-                    android:layout_width="124dp"
+                    android:layout_width="125dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
+                    android:scaleType="centerCrop"
                     android:background="@drawable/jarrod_coffee_logo"
                     android:padding="10dp"
                     tools:ignore="ContentDescription" />
@@ -50,7 +52,7 @@
                 app:layout_constraintTop_toTopOf="@+id/guideline17"
                 app:layout_constraintVertical_bias="0.184">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/home_btn"
                     style="@style/PrimaryColoredButton"
                     android:layout_width="99dp"
@@ -63,7 +65,7 @@
                     android:textColor="@color/white"
                     tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/home_event_btn"
                     style="@style/PrimaryColoredButton"
                     android:layout_width="wrap_content"
@@ -75,7 +77,7 @@
                     android:textColor="@color/white"
                     tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/home_contact_us"
                     style="@style/PrimaryColoredButton"
                     android:layout_width="124dp"
@@ -84,7 +86,7 @@
                     android:background="@drawable/jarrod_custom_btn"
                     android:text="Contact us"
                     android:textColor="@color/white"
-                    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck,TextSizeCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -104,7 +106,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:background="@drawable/jarrod_coffee_map_fixed"
+                    android:background="@drawable/temp_image"
                     android:padding="10dp"
                     tools:ignore="ContentDescription,ImageContrastCheck" />
             </LinearLayout>
@@ -121,7 +123,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="681dp" />
+                app:layout_constraintGuide_begin="600dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline19"
@@ -135,14 +137,14 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="413dp" />
+                app:layout_constraintGuide_begin="344dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="625dp" />
+                app:layout_constraintGuide_begin="544dp" />
 
             <LinearLayout
                 android:id="@+id/linearLayout6"
@@ -218,7 +220,7 @@
                     android:text="@string/location_information"
                     android:textColor="@color/white" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/map_btn"
                     android:layout_width="140dp"
                     android:layout_height="wrap_content"
@@ -231,17 +233,17 @@
                     android:text="Go to Map"
                     android:textAlignment="center"
                     android:textAllCaps="true"
-                    android:textColor="@color/white"
+                    android:textColor="#FF9100"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck,TextContrastCheck" />
             </LinearLayout>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/home_phone_btn"
                 style="@style/PrimaryColoredButton"
-                android:layout_width="166dp"
-                android:layout_height="33dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="0.7"
                 android:padding="5dp"
@@ -254,22 +256,22 @@
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
-                app:layout_constraintVertical_bias="0.636"
-                tools:ignore="TouchTargetSizeCheck" />
+                app:layout_constraintVertical_bias="0.08"
+                tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="475dp" />
+                app:layout_constraintGuide_begin="441dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="714dp" />
+                app:layout_constraintGuide_begin="694dp" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -284,7 +286,69 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/jarrod_image_wrap"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText,TextSizeCheck" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline18">
+
+
+                <ImageButton
+                    android:id="@+id/facebook_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/jarrod_transparent"
+                    android:contentDescription="@string/facebook_btn_txt"
+                    android:src="@drawable/ic_facebook_logo"
+                    android:text="@string/facebook_btn_txt"
+                    tools:ignore="ImageContrastCheck" />
+
+                <ImageButton
+                    android:id="@+id/twitter_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/twitter_txt_btn"
+                    android:backgroundTint="@color/jarrod_transparent"
+                    android:src="@drawable/twitter"
+                    android:text="@string/twitter_txt_btn" />
+
+                <ImageButton
+                    android:id="@+id/instagram_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/jarrod_transparent"
+                    android:contentDescription="@string/instagram_txt"
+                    android:src="@drawable/ic_instagram_logo"
+                    android:text="@string/instagram_txt" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:text="@string/follow_us_label"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline21" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="593dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

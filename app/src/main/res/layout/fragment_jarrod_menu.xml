@@ -7,14 +7,14 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        android:background="@color/jarrod_bkg"
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@color/jarrod_bkg"
-            >
+            android:padding="10dp">
 
 
             <LinearLayout
@@ -29,11 +29,12 @@
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="183dp"
-                    android:layout_height="175dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:background="@drawable/jarrod_coffee_logo"
-                    tools:ignore="ContentDescription" />
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@null"
+                    android:background="@drawable/jarrod_coffee_logo" />
             </LinearLayout>
 
             <LinearLayout
@@ -47,7 +48,7 @@
                 app:layout_constraintStart_toStartOf="@+id/guideline7"
                 app:layout_constraintTop_toTopOf="@+id/guideline6">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/menu_home_btn"
                     style="@style/PrimaryColoredButton"
                     android:layout_width="181dp"
@@ -56,9 +57,10 @@
                     android:layout_marginBottom="5dp"
                     android:text="Home"
                     android:textColor="@color/white"
-                    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+                    android:textSize="21sp"
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck,TextSizeCheck" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/menu_events_btn"
                     style="@style/PrimaryColoredButton"
                     android:layout_width="181dp"
@@ -67,9 +69,10 @@
                     android:layout_marginBottom="5dp"
                     android:text="Events"
                     android:textColor="@color/white"
-                    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+                    android:textSize="21sp"
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck,TextSizeCheck" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/menu_contact_us_btn"
                     style="@style/PrimaryColoredButton"
                     android:layout_width="181dp"
@@ -77,14 +80,15 @@
                     android:layout_gravity="center"
                     android:text="Contact US"
                     android:textColor="@color/white"
-                    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+                    android:textSize="21sp"
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck,TextSizeCheck" />
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/category_view"
-                android:layout_width="392dp"
+                android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:background="@color/white"
+                android:background="@color/jarrod_transparent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.157"

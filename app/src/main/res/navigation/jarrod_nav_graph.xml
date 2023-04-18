@@ -30,6 +30,9 @@
         <action
             android:id="@+id/action_jarrodMenuFragment_to_jarrodInnerMenuFragment"
             app:destination="@id/jarrodInnerMenuFragment" />
+        <action
+            android:id="@+id/action_jarrodMenuFragment_to_jarrodEventFragment"
+            app:destination="@id/jarrodEventFragment" />
     </fragment>
     <fragment
         android:id="@+id/jarrodEventFragment"
@@ -39,14 +42,8 @@
         <action
             android:id="@+id/action_jarrodEventFragment_to_jarrodHomeFragment"
             app:destination="@id/jarrodHomeFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jarrodContactFragment"
-        android:name="artemis.yanez.jarrodcoffee.fragments.JarrodContactFragment"
-        android:label="fragment_jarrod_contact"
-        tools:layout="@layout/fragment_jarrod_contact" >
         <action
-            android:id="@+id/action_jarrodContactFragment_to_jarrodHomeFragment"
+            android:id="@+id/action_jarrodEventFragment_to_jarrodHomeFragment2"
             app:destination="@id/jarrodHomeFragment" />
     </fragment>
     <fragment
@@ -69,5 +66,8 @@
         <action
             android:id="@+id/action_jarrodDetailFragment_to_jarrodInnerMenuFragment"
             app:destination="@id/jarrodInnerMenuFragment" />
+        <action
+            android:id="@+id/action_jarrodDetailFragment_to_jarrodHomeFragment"
+            app:destination="@id/jarrodHomeFragment" />
     </fragment>
 </navigation>

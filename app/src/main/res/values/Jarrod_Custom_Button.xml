@@ -5,8 +5,6 @@
      -->
     <style name="PrimaryColoredButton" parent="Base.Widget.AppCompat.Button.Borderless">
         <item name="colorButtonNormal">@color/jarrod_red</item>
-        <item name="android:focusable">true</item>
-        <item name="android:clickable">true</item>
         <item name="textAllCaps">true</item>
         <item name="android:background">@drawable/jarrod_custom_btn</item>
         <item name="android:textSize">18sp</item>

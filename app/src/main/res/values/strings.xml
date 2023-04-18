@@ -2,4 +2,15 @@
     <string name="app_name">jarrodCoffee</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="readable_arrow">arrow that is used for navigating menu items</string>
+    <string name="facebook_btn_txt">Facebook</string>
+    <string name="twitter_txt_btn">Twitter</string>
+    <string name="follow_us_label">Follow Us</string>
+    <string name="instagram_txt">Instagram</string>
+    <string name="home_btn_txt">Home</string>
+    <string name="events_btn_txt">Events</string>
+    <string name="contact_us_btn_txt">Contact us</string>
+    <string name="add_to_cart_txt">Add to Cart</string>
+    <string name="price_txt">Price</string>
+    <string name="name_label_txt">Name</string>
+    <string name="size_label_txt">Size</string>
 </resources>

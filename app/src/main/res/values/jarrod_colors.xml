@@ -5,4 +5,6 @@
     <color name="jarrod_darker_red">#4E0101</color>
     <color name="jarrod_bkg">#2C3245</color>
     <color name="jarrod_lighter_bkg">#525E85</color>
+    <color name="jarrod_yellow">#DDDA04</color>
+    <color name="jarrod_transparent">#00FFFFFF</color>
 </resources>
