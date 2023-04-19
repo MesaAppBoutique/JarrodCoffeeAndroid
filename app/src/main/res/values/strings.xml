@@ -13,4 +13,5 @@
     <string name="price_txt">Price</string>
     <string name="name_label_txt">Name</string>
     <string name="size_label_txt">Size</string>
+    <string name="launch_to_see_events_txt">Launch to see events</string>
 </resources>
